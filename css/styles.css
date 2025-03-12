@@ -81,11 +81,42 @@ h1, h2, h3 {
     margin: 10px 0;
     cursor: pointer;
     transition: all 0.3s ease;
-    width: 190px;
+    width: 180px;
     text-align: center;
 }
 
 .center-content button:hover {
     background-color: black;
     color: white;
+}
+
+/* Additional Button Colors */
+.center-content .green {
+    background-color: green;
+    color: white;
+    border: 2px solid darkgreen;
+}
+
+.center-content .green:hover {
+    background-color: darkgreen;
+}
+
+.center-content .bright-pink {
+    background-color: hotpink;
+    color: white;
+    border: 2px solid deeppink;
+}
+
+.center-content .bright-pink:hover {
+    background-color: deeppink;
+}
+
+.center-content .blue {
+    background-color: blue;
+    color: white;
+    border: 2px solid darkblue;
+}
+
+.center-content .blue:hover {
+    background-color: darkblue;
 }

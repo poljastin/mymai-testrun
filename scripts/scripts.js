@@ -45,16 +45,18 @@ document.addEventListener("DOMContentLoaded", () => {
     initConfetti();
     animateConfetti();
 
-    // Vertical Carousel Movement
+    // Vertical Carousel Movement (Smooth, Infinite, No Flicker)
     function startCarousel(selector, direction) {
         const track = document.querySelector(selector);
-        const items = track.children;
-        const totalHeight = Array.from(items).reduce((acc, item) => acc + item.clientHeight, 0);
+        const items = Array.from(track.children);
+        const totalHeight = items.reduce((acc, item) => acc + item.clientHeight, 0);
+        
+        track.innerHTML += track.innerHTML; // Duplicate for seamless effect
         track.style.position = "absolute";
         track.style.top = "0";
-        track.innerHTML += track.innerHTML; // Duplicate images for infinite scrolling
+
         let translateY = 0;
-        let animationSpeed = 1.5 * direction; // Adjust speed
+        let animationSpeed = 1.2 * direction; // Adjust speed
 
         function animateCarousel() {
             translateY += animationSpeed;
@@ -67,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
             requestAnimationFrame(animateCarousel);
         }
 
-        animateCarousel();
+        requestAnimationFrame(animateCarousel);
     }
 
     startCarousel(".carousel.left .carousel-track", -1); // Scroll up

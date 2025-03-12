@@ -1,0 +1,79 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Indie+Flower&display=swap');
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightpink;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+p{
+    font-size: .75em;
+}
+
+.container {
+    max-width: 90%;
+    padding: 20px;
+}
+
+.center-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid white;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.back {
+    font-size: 16px;
+    color: black;
+}
+
+.back a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.back a:hover {
+    color: white;
+}
+
+
+/* Card Styles */
+.image-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    width: 80%; /* Smaller width for better mobile fit */
+    max-width: 300px; /* Limit max size */
+    padding: 10px;
+    border: 2px solid white; /* White border */
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2); /* Light transparency for a soft look */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card-image {
+    width: 100%;
+    border-radius: 8px;
+}
