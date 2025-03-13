@@ -77,3 +77,68 @@ p{
     width: 100%;
     border-radius: 8px;
 }
+
+/* Media Queries for Responsive Design */
+
+/* iPad (768px - 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    p {
+        font-size: 1em; /* Slightly larger text for iPad */
+    }
+
+    .container {
+        max-width: 70%; /* Wider container for iPad */
+    }
+
+    .center-image {
+        max-width: 60%; /* Larger image for iPad */
+    }
+
+    .description {
+        font-size: 22px; /* Larger text for better readability */
+    }
+
+    .back {
+        font-size: 18px; /* Larger back button text */
+    }
+
+    .card {
+        width: 60%; /* Wider cards for iPad */
+        max-width: 400px; /* Larger max width for cards */
+    }
+}
+
+/* Desktop (1025px and above) */
+@media only screen and (min-width: 1025px) {
+    p {
+        font-size: 1.2em; /* Larger text for desktop */
+    }
+
+    .container {
+        max-width: 60%; /* Wider container for desktop */
+    }
+
+    .center-image {
+        max-width: 50%; /* Larger image for desktop */
+    }
+
+    .description {
+        font-size: 24px; /* Larger text for better readability */
+    }
+
+    .back {
+        font-size: 20px; /* Larger back button text */
+    }
+
+    .card {
+        width: 50%; /* Wider cards for desktop */
+        max-width: 500px; /* Larger max width for cards */
+    }
+
+    .image-grid {
+        flex-direction: row; /* Display cards in a row for desktop */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px; /* Add spacing between cards */
+    }
+}

@@ -124,3 +124,65 @@ h1, h2, h3 {
 .center-content .blue:hover {
     background-color: darkblue;
 }
+
+/* iPad (768px - 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .carousel {
+        width: 150px; /* Wider carousel for iPad */
+    }
+
+    .carousel img {
+        width: 150px; /* Larger images for iPad */
+    }
+
+    .center-content button {
+        font-size: 14px; /* Larger button text for iPad */
+        width: 220px; /* Wider buttons for iPad */
+        padding: 15px 25px; /* More padding for better touch interaction */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Larger heading for iPad */
+    }
+
+    h2 {
+        font-size: 2rem; /* Larger subheading for iPad */
+    }
+
+    h3 {
+        font-size: 1.5rem; /* Larger subheading for iPad */
+    }
+}
+
+/* Desktop (1025px and above) */
+@media only screen and (min-width: 1025px) {
+    .carousel {
+        width: 200px; /* Wider carousel for desktop */
+    }
+
+    .carousel img {
+        width: 200px; /* Larger images for desktop */
+    }
+
+    .center-content button {
+        font-size: 16px; /* Larger button text for desktop */
+        width: 250px; /* Wider buttons for desktop */
+        padding: 20px 30px; /* More padding for better interaction */
+    }
+
+    h1 {
+        font-size: 3rem; /* Larger heading for desktop */
+    }
+
+    h2 {
+        font-size: 2.5rem; /* Larger subheading for desktop */
+    }
+
+    h3 {
+        font-size: 2rem; /* Larger subheading for desktop */
+    }
+
+    .center-content {
+        margin-top: 50px; /* More spacing at the top for desktop */
+    }
+}
